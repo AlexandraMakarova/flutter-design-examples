@@ -13,7 +13,7 @@ class LauncherPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: appCurrentTheme.accentColor,
         centerTitle: true,
-        title: Text('Flutter examples designs - Mobile'),
+        title: Text('Flutter designs components - Mobile'),
       ),
       drawer: _PrincipalMenu(),
       body: _OptionsList(),

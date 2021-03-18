@@ -1,4 +1,5 @@
 import 'package:design_app/src/theme/theme_changer.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -24,6 +25,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: currentTheme,
       debugShowCheckedModeBanner: false,
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [
+        const Locale('en', 'US'), // English, no country code
+        const Locale('es', 'ES'), // Arabic, no country code
+        const Locale('ru', 'RU'), // Arabic, no country code
+      ],
       title: 'Desing App',
       home: OrientationBuilder(
         builder: (BuildContext context, Orientation orientation) {
@@ -35,6 +46,12 @@ class MyApp extends StatelessWidget {
           );
         },
       ),
+      // routes: getAplicacionRoutes(),
+      // onGenerateRoute: (RouteSettings settings) {
+      //   print('Called route ${settings.name} ');
+      //   return MaterialPageRoute(
+      //       builder: (BuildContext context) => AlertPage());
+      // },
     );
   }
 }

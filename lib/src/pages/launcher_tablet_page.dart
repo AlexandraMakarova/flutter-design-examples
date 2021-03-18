@@ -16,7 +16,7 @@ class LauncherTabletPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: appTheme.currentTheme.accentColor,
         centerTitle: true,
-        title: Text('Flutter designs - Tablet'),
+        title: Text('Flutter designs components - Tablet'),
       ),
       drawer: _PrincipalMenu(),
       body: Row(

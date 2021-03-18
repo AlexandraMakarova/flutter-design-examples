@@ -31,13 +31,16 @@ class _ButtonNewList extends StatelessWidget {
     return ButtonTheme(
       minWidth: size.width * 0.9,
       height: 100,
-      child: RaisedButton(
+      child: ElevatedButton(
         onPressed: () {},
-        color: (appTheme.darkTheme)
-            ? appTheme.currentTheme.accentColor
-            : Color(0xffED6762),
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.only(topLeft: Radius.circular(50))),
+        style: ElevatedButton.styleFrom(
+          primary: (appTheme.darkTheme)
+              ? appTheme.currentTheme.accentColor
+              : Color(0xffED6762),
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(topLeft: Radius.circular(50))),
+          textStyle: TextStyle(color: Colors.white),
+        ),
         child: Text(
           'Create new list',
           style: TextStyle(
