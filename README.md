@@ -11,3 +11,7 @@ Flutter design examples
 7. Tablet view
 8. Mobile view
 9. Side menu
+10. Alerts
+11. Slider
+12. Input form
+13. Listview
